@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 15px;
+    line-height:1.5;
+    height: 100vh;
+    text-align: center;
+}
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*Nav*/
+.logo{
+    margin-left: 20px;
+vertical-align: baseline;
+    background-image: url(IBM-LOGO.png);
+}
+a.header-img{
+    color: #f4f4f4;
+    cursor: pointer;
+    padding: 0 32px 0 16px;
+    border: .125rem solid transparent;
+    height: 100%;
+    display: flex;
+    letter-spacing: 0.1px;
+    transition: .11s;
+    font: inherit;
+    vertical-align: baseline;
+}
+.main-nav{
+   width: 100%;
+   background: #000;
+}
+.main-nav ul {
+    display: flex;
+  z-index: 12;
+  padding: 0 32px 0 16px;
+  letter-spacing: 0.1px;
+  max-width: 1170px;
+margin:0;
+font: inherit;
+vertical-align: baseline;
+}
+
+.main-nav ul li {
+    position: relative;
+    padding: 10px ;
+    transition: 0.5s;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.main-nav ul li:last-child {
+border-right: none;
+}
+.main-nav ul li a {
+    padding:0 20px;
+    color: #fff;
+}
+.main-nav ul li ul {
+position: absolute;
+top: 45px;
+left: 0;
+background: #000;
+width: 200px;
+display: block;
+transition: 0.5s;
+opacity: 0;
+    visibility: hidden;
+}
+.main-nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-nav ul li:hover{
+background:#f4f4f4;
+}
+.main-nav ul li ul li{
+    border-right:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 768px)
+{
+.main-nav ul
+{
+display: block;
+   }
+   main-nav ul li ul{
+       width: 100%;
+       z-index: inherit;
+   }
+}
+/*.main-nav .logo {
+    width: 110px;
+  }
+
+  
+  }*/
+  .main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+  }
+ /* Landing-Page img*/
+
+  #landing-image{
+      width: 100%;
+      height: 500px;
+      position: fixed;
+      top: 100px;
+      background-image:url(LANDING_PAGEHEADER.jpg) no-repeat cover center;
+  }
+ 
