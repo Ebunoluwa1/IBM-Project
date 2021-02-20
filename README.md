@@ -1,3 +1,2 @@
 # IBM-Project
-still working on this project...
 https://ebunoluwa1.github.io/IBM-Project/
