@@ -237,13 +237,14 @@ ul.user-links{
 }
 
 li.button-sign-in{
-   
+    margin: -8px;
     text-align: center;
     padding: 0.1rem 1rem 1rem 0rem;
     position: relative;
     height: 2rem;
     display: flex;
     align-items: center;
+    vertical-align: baseline;
 
     
 }
@@ -253,19 +254,22 @@ li.button-register{
     border:none;
     text-align: center;
     text-decoration: none;
-    width: 180px;
+    width: 100%;
+    margin: -8px 0px;
+vertical-align: baseline;
     font-size: 16px;
     background-color: #0062ff;
     padding: 0.1rem 1rem 1rem 0rem;
-    height: 2rem;
+    height: 100%;
     position: relative;
+
 }
 a.button-menu{
     color: #fff;
     position: relative;
     display: inline-block;
     background-color: #0062ff;
-    padding: 0.1rem 1rem 1rem 0rem;
+   
     text-align: center;
     text-decoration: none;
     height: 100%;
@@ -279,14 +283,182 @@ a.button-menu{
     transition: background-color .11s,border-color .11s,color .11s;
 
 }
- /* Landing-Page img
+ /* Lets style the container-Landing-Page img
   */
 
-  #landing-image{
-      width: 100%;
-      height: 500px;
-      position: fixed;
-      top: 100px;
-      background-image:url(LANDING_PAGEHEADER.jpg) no-repeat cover center;
+  .container{
+      margin-top: 3rem;
+     
   }
+  #landing-image{
+      background:url(images/africa-banner.png) right  center / cover no-repeat ;
+  }
+.header-img .title{
+    text-align: left;
+    padding: 1.5rem 0 0;
+    padding-left: 18px;
+    background-image: linear-gradient(126deg,#5b29e6 -13%,#cf2361 56%);
+    font-size: 48px;
+    font-weight: 700;
+    font-stretch: normal;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+h1{
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 10px;
+}
+.bx--grid{
+    z-index: 2;
+    direction: 1tr;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 99rem;
+}
+.desc-items,.desc-item{
+margin-bottom: 16px;
+}
+.desc-items,.desc-item{
+    margin-right: 9px;
+    padding-left: 18px;
+    
+}
+.title {
+    margin-right: 9px;
+    
+}
+
+/*Button Link*/
+#button-register{
+    display: flex;
+}
+.button-link{
+    display: block;
+    text-align: left;
+    margin-right: 80px;
+    padding-left: 30px;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+.header-img a{
+    margin:12px 0px 24px;
+}
+a.btn{
+background-color: #0f62fe;
+border: 1px solid transparent;
+color: white;
+  padding: 14px 85px 14px 25px;
+  text-align:left;
+  text-decoration: none;
+  display: inline-block;
+}
+a.btn-play{
+    display: inline-block;
+}
+.btn-prime{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.125;
+    letter-spacing: .16px;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: top;
+    flex-shrink: 0;
+    min-height: 3rem;
+    padding:calc(.875rem - 3px) 60px calc(.875rem -3px) 12px;
+    border-radius: 0;
+    text-align: left;
+    text-decoration: none;
+    transition:all 70ms cubic-bezier(0, 0, 0.38, 0.9) 0s;
+    outline: none;
+}
+
+ .play-store{
+    width:190px;
+    height: 73px;
+    display: inline-block;   
+}
+/* watch videos*/
+p.watch-V{
+    direction:1tr;
+    width: fit-content;
+}
+div a{
+   /* display: flex;*/
+    align-items: center;
+}
+a.watch-video{
+    fill:#d2ac58;
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+a.inline-svg{
+    width: 32px;
+    height: 32px;
+}
+div .span{
+    text-align: right;
+    font-size: 16px;
+    
+}
+div a span{
+    white-space: pre-wrap;
+    padding-inline-start: 16px;
+}
+div.watch{
+    /*padding:2vw!important;*/
+    display:inline-block;
+    margin: 0;
+    align-content: start;
+    z-index: 2;
+    direction: 1tr;
+    align-items: start;
+    padding-left: 18px;
+}
+
+/*learning path-*/
+section{
+
+}
+.learning-path-head{
+    background-image: linear-gradient(126deg,#5b29e6 -13%,#cf2361 56%);
+    font-size: 48px;
+    font-weight: 700;
+    font-stretch: normal;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3{
+    display: block;
+    text-align: center;
+}  
+
+div.learn-yourself{
  
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+justify-content: center;
+display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
