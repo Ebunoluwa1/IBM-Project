@@ -453,26 +453,31 @@ h3{
     text-align: center;
 }  
 
-.learn-yourself {
-/*display: flex;
-margin: 2rem auto;
-    ;*/
+.learn-yourself.me{
 width: 50%;
 align-items: center;
     text-align: center;
 justify-content: center;
 display: grid;
-grid-template-columns: repeat (3, 1fr);
-    grid-gap: 20px;
+grid-template-columns: 3fr 3fr 3fr;
+    grid-gap: 150px;
     margin-bottom: 40px;
+    
 }
 .learn-yourself,.learning-path>div{
+    text-align: center;
+    padding: 0rem 3rem 0 8rem;
     flex-grow: 1;
-    width: 33%;
+    width: 60%;
+    display: flex;
+    margin: 2rem auto;
+    grid-gap: 100px;
+    
 }
 div.number{
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 0.5rem 0;
 }
 .learn-yourself,.learning-path>div>div {
     padding: 0.5rem 0;
@@ -491,7 +496,9 @@ div.number{
       user-select: none;
       touch-action: pan-y;
       -webkit-tap-highlight-color: transparent;
+      transform: translateZ(0);
 }
+
 .slick-disabled {
     display: none!important;
     }
@@ -516,3 +523,50 @@ div.number{
         border-radius: 0;
         font-family: inherit;
     }
+    .learning-path .slick-slider .btn-row{
+        height: auto!important;
+        padding-bottom: 1.5rem!important;
+    }
+    .btn-row{
+        float: left;
+        min-height: 1px;
+        display: block;
+    }
+    .learning-path .slick-slider .btn-row>div {
+        height: 100%;
+    }
+    .learning-path .slick-slider .row-track {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .learning-path .slick-slider .row-track a {
+    color:#323232;
+text-decoration: none;
+}
+.path-item{
+    background-image: linear-gradient(rgb(92, 195, 246), rgb(47, 144, 233));
+}
+
+.learning-path .slick-slider .row-track .image-item{
+    max-width: 68px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top:22px;
+}
+.btn-row img{
+    display: block;
+}
+.learning-path .slick-slider .row-track .image-item p{
+    text-align: start;
+    position: absolute;
+    left:13px;
+    bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 60;
+}
+p{
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
