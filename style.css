@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-cursor: pointer;
+    cursor: pointer;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -498,7 +498,7 @@ div.number{
       -webkit-tap-highlight-color: transparent;
       transform: translateZ(0);
 }
-
+/*button*/
 .slick-disabled {
     display: none!important;
     }
@@ -523,6 +523,21 @@ div.number{
         border-radius: 0;
         font-family: inherit;
     }
+    /*slick-list*/
+    .slick-list{
+        transform: translateZ(0);
+        overflow: hidden;
+        margin:0;
+padding: 0;
+position: relative;
+display: block;   
+    }
+    .learning-path .slick-slider .slick-track{display: flex!important}
+    .slick-track::before{
+        display: table;
+        content: "";
+    }
+
     .learning-path .slick-slider .btn-row{
         height: auto!important;
         padding-bottom: 1.5rem!important;
@@ -544,7 +559,20 @@ div.number{
 text-decoration: none;
 }
 .path-item{
-    background-image: linear-gradient(rgb(92, 195, 246), rgb(47, 144, 233));
+    margin: 1rem;
+    text-align: center;
+    height: 168px;
+    max-height: 168px;
+    cursor: pointer;
+    opacity: .95;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    background-image: linear-gradient(
+        180deg);
+}
+div.path-item{
+    padding: 14px 85px 14px 25px;
 }
 
 .learning-path .slick-slider .row-track .image-item{
@@ -557,7 +585,7 @@ text-decoration: none;
 .btn-row img{
     display: block;
 }
-.learning-path .slick-slider .row-track .image-item p{
+.learning-path .slick-slider .row-track .path-item .image-title p{
     text-align: start;
     position: absolute;
     left:13px;
@@ -569,4 +597,218 @@ text-decoration: none;
 p{
     line-height: 1.5rem;
     letter-spacing: 0;
+    vertical-align: baseline;
+}
+.slick-track::after{
+    display: table;
+    content: "";
+}
+
+
+
+element.style {
+    width: 2385px;
+    opacity: 1;
+    transform: translate3d(-1113px, 0px, 0px);
+}
+/*button*/
+.slick-arrow{
+    outline: 0;
+}
+.learning-path.slick-disabled{
+    display: none!important;
+}
+.slick-next{
+    right: -25px;
+    color: transparent;
+    background: transparent;
+}
+.slick-prev{
+    left:-25px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.learning-path .slick-arrow::before
+{
+    color: #3b6caa!important;
+}
+.slick-next::before{
+    content: ""→"";
+}
+.slick-next::before{
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    webkit-font-smoothing: antialiased;}
+/*ul*/
+.row-dots{
+    position:absolute;
+    bottom: -25px;
+    width: 100%;
+    padding:0px;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+}
+ul{
+    border: 0;
+    font-size: 100%;
+    font:inherit;
+    vertical-align: baseline;
+}
+.row-dots li{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+.row-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.row-dots li button {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor:pointer;
+}
+.row-dots li button::before {
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content:"•";
+    text-align: center;
+    opacity: .25;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+}
+.row-dots li.slick-active button::before {
+    opacity: .75;
+    color: #000;
+}
+/*Journey*/
+.journey{
+    margin: 1rem auto;
+    text-align: center;
+    padding: 2rem;
+}
+.journey .Journey{
+    background-image: linear-gradient(146deg,#5b29e6 34%,#de2779 115%,#ec276e 78%);
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+    @media screen and (min-width: 1200px){
+.journeys {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-bottom: 2rem;
+}
+    }
+.bx--row {
+  display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+@media(min-width:82rem){
+    .bx--col{
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+
+@media(min-width:42rem){
+    .bx--col-md-8 {
+        display: block;
+        flex: 0 0 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+
+.journey > .Journey>.journeys>.journey_card{
+position: relative;
+margin-top:3rem;
+padding: 1rem;
+text-align: center;
+cursor: pointer;
+background: #fff;
+}
+@media only screen and (min-width: 1056px){
+    .homepage_journey_card {
+        height: 100%;
+    }
+    }
+
+.journey> .bx--row.journey_card>img{
+    height: 160px;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.journey> .bx--row.journey_card>.journey_card_title{
+    font-size: 20px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b2b2b;
+    margin-bottom: 1rem;
+}
+.journey> .bx--row.journey_card p {
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2b2b2b;
+    margin-bottom: 4rem;
+}
+
+.journey> .bx--row.journey_card button {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-right: .875rem;
+}
+.primary-btn{
+    border: 1px solid transparent;
+    color: #fff;
 }
