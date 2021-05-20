@@ -774,8 +774,7 @@ justify-content:normal;
 }
 .journey> .Journey > .journeys > .journey_card{
     position: relative;
- 
-    margin-top:3rem;
+margin-top:3rem;
     padding: 1rem;
     text-align: center;
     cursor: pointer;
@@ -788,15 +787,16 @@ justify-content:normal;
     }
     }*/
 
-.journey> .journeys > .journey_card > img{
-    height: 160px;
+.journey>.journeys>.journey_card>img{
+    height: 165;
+    width: 10;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
     
 }
 
 
-.journey, .bx--row, .journey_card>.journey_card_title{
+.journey> .bx--row> .journey_card>.journey_card_title{
     font-size: 20px;
     font-weight: 700;
     font-stretch: normal;
@@ -1049,7 +1049,7 @@ background:url(images/digitalJ.jpg) left  center / no-repeat ;
                     .homepage-discover-container, .discover-images-container, .discover-images, .discover-box img {
                         height: 25px;
                         margin-left: 1rem;
-                    justify-content: space-between;               margin-right: 1rem;   
+                                 margin-right: 1rem;   
                margin-bottom: 2rem;
                     }
    /*footer*/
@@ -1113,8 +1113,9 @@ background:url(images/digitalJ.jpg) left  center / no-repeat ;
                         width: 100%;
                         margin-bottom: -10rem;
                         position: absolute;
+                        justify-content: left;
                     }
-                    footer > .footer-links-sub-container > .bx--row { justify-content: right;
+                    footer > .footer-links-sub-container > .bx--row {
                         margin-right: -16rem;
                     }
                     div.footer-links-container.bx--row {
@@ -1123,12 +1124,14 @@ background:url(images/digitalJ.jpg) left  center / no-repeat ;
                     }
                     .footer-element{
                         margin-top: 20px;
+                        justify-content: center;
                     }
                     .footer-link {
                         line-height: 2rem;
                         padding: 0 10px;
                         color: #d1d1d1;
                         display: inline-block;
+                        justify-content: center;
                         transition: color .3s;
                         text-decoration: none;
                     }
