@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ <!--link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+ <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
 
- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="style.css">
     <title> IBM Digital - Nation Africa | Explore, Innovate on IBM Cloud, Learn Skills, and Find Jobs </title>
@@ -41,6 +43,8 @@
                     <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="https://www.w3.org/TR/SVG2/" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" class="down-arrow"><polygon points="8,11 3,6 3.7,5.3 8,9.6 12.3,5.3 13,6"></polygon></svg>
                 </a>
                     <ul aria-label="Courses" class="header-menu">
+                        <li class=""><a id="header-anchor" href="#" class="header-menu" tabindex="0"><span class="text-end">All Courses</span></a></li>
+                        <li class="menu-separator"></li>
                     <li><a id="header-anchor" href="#" class="header-menu" tabindex="0"><span class="text-end">Coding</span></a></li>
                     <li><a id="header-anchor" href="# "class="header-menu" tabindex="0"><span class="text-end">Web Application</span></a></li>
                     <li><a id="header-anchor" href="#" class="header-menu" tabindex="0"><span class="text-end">Design Thinking</span></a></li>
@@ -172,7 +176,7 @@
                 <div class="slick-slider">
                <button type="button" class="slick-arrow slick-prev slick-disabled" > Previous </button>
                <div class="slick-list">
-                   <div class="slick-track" id="slick-track-container" style="width: 2385px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                   <div class="slick-track" id="slick-track-container" style="width: 1990px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
                     ::before
              <div class="btn-row slide-current" data-index="0" tab-index="-1" style="outline: none; width: 159px;">
                    <div class="row-track 1tr" id="track-container" style="width:100%; display:inline-block" tab-index="-1">
@@ -237,7 +241,7 @@
                             <p class="image-title" id="Quantum Computing_card">Quantum Computing</p></div>
                         </a></div></div>
 
-                      <!-- <div data-index="12" class="" tabindex="-1"  style="outline: none; width: 159px;">
+                       <!--div data-index="12" class="" tabindex="-1"  style="outline: none; width: 159px;">
                             <div class="row-track 1tr" id="track-container" style="width:100%; display:inline-block" tab-index="-1">
                         <a href="#"><div class="path-item" style="
                             background-image:  linear-gradient(rgb(158, 37, 245), rgb(101, 16, 231));
@@ -269,7 +273,7 @@
                      </section>
 
 <!--On Journey-->
-<section class="journey" dir="ltr">
+<section class="journey bx--grid" dir="1tr">
     <h3 class="Journey">Explore courses by Journeys</h3>
     <br>
     <div class="journeys bx--row">
@@ -277,39 +281,142 @@
     <div id="explorer_card" class="journey_card" style="background-color: rgb(240, 243, 250);">
         <img src="images/explorer.png" alt="explorer">
         <h4 class="journey_card_title">Explorer</h4>
-        <p>Learn the basics of emerging technologies and industries with no prior experience.</p>
+        <p  class="note">Learn the basics of emerging technologies and industries with no prior experience.</p>
        <button class="primary-btn btn-prime" type="button" style="background-color: rgb(15, 98, 254);
-    "><a href="#">Start Learning</a>
+    "><span>Start Learning</span>
        </button> </div>
     </div>
     <div class="bx--col bx--col-md-8 bx--col-sm-4">
-        <div id="explorer_card" class="journey_card" style="background-color: rgb(240, 243, 250);">
+        <div id="explorer_card" class="journey_card" style="background-color: rgb(245, 255, 233);">
         <img src="images/innovator.jpg" alt="innovator">
-        <h4>Innovator</h4>
-        <p>Get inspired and build innovative solutions using IBM Cloud.</p>
+        <h4 class="journey_card_title">Innovator</h4>
+        <p  class="note">Get inspired and build innovative solutions<br> using IBM Cloud.</p>
         <button class="primary-btn btn-prime" type="button" style="background-color: rgb(15, 98, 254);
-        " ><a href="#">Start Learning</a>
+        " ><span class="short">Start Learning</span>
         </button> 
     </div>
     </div>
     <div  class="bx--col bx--col-md-8 bx--col-sm-4">
-        <div id="explorer_card" class="journey_card" style="background-color: rgb(240, 243, 250);">
-        <img src="images/new-collar.png" alt="new-collar">
-        <h4>New-collar</h4>
-        <p>Align your skills with the most in demand job roles in the market.</p>
+        <div id="explorer_card" class="journey_card" style="background-color: rgb(248, 198, 117);">
+        <img src="images/new_collar.png" alt="new-collar">
+        <h4 class="journey_card_title">New-collar</h4>
+        <p class="note">Align your skills with the most in demand job roles in the market.</p>
         <button class="primary-btn btn-prime"  type="button" style="background-color: rgb(15, 98, 254);
-        " ><a href="#">Start Learning</a>
+        " ><span class="short">Start Learning</span>
         </button> 
     </div>
 </div>
 </section>
 <!--testimonial container-->
-<div class="bx--grid testimonial-container">
+<div class="testimonial-container">
+    <div class="rep-text">
+    <h3 class="test">We're impacting lives using technology and innovation</h3></div>
+    <div class="slick-slider">
+        <div class="swiper-button-prev"></div>
+        <div class="slick-list">
+            <div class="slick-track" id="slick-track-container" style=" opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            
+             <div class="btn-row slide-current" data-index="0" tab-index="-1" style="outline: none; width: 365px;">
+                <div>
+                    <div style="width:100%; display:inline-block" tab-index="-1">
+                        <div class="testimonial-card-container" >
+                            <div class="text-container">
+                                <div>It has helped me <b>built my confidence</b> as a woman in the Engineering &amp; Technology world simply through conquering my fears of limitations.</div>
+                            </div>
+       <div class="testimonial-card-bottom-container">
+        <img src="images/lady1.jpg" alt="lady-1" class="userImage">
+        <p class="userName">Ugomma Deborah Ogu,Nigeria"</p>
+       </div>      </div>    </div>   </div>    </div>   
+        
+       <div class="btn-row slide-current" data-index="1" tab-index="-1" style="outline: none; width: 365px;">
+        <div>
+            <div style="width:100%; display:inline-block" tab-index="-1">
+                <div class="testimonial-card-container" >
+                    <div class="text-container">
+                        <div>With the knowledge I acquired, I have been exposed to <b>new career opportunities</b> and I’m currently <b>self-employed</b> as a Web Designer and an App Developer.</div>
+                    </div>
+<div class="testimonial-card-bottom-container">
+<img src="images/angura.jpg" alt="lady-2" class="userImage">
+<p class="userName">Angura Chivir Alfred, Nigeria</p>
+</div>                 </div>
+        </div>
+        </div>
+</div>        
+
+    
+<div class="btn-row slide-current" data-index="2" tab-index="-1" style="outline: none; width: 365px;">
+    <div>
+        <div style="width:100%; display:inline-block" tab-index="-1">
+            <div class="testimonial-card-container" >
+                <div class="text-container">
+                    <div>To my surprise I found out that career paths such as Artificial Intelligence, Cloud, Security, etc. are also meant for people <b>with no technical background</b>.</div>
+                </div>
+<div class="testimonial-card-bottom-container">
+<img src="images/asmaa.jpg" alt="lady-3" class="userImage">
+<p class="userName">Asmaa Ibrahim, Egypt</p>
+</div>                 </div>
+    </div>
+    </div>
+</div>
 
 </div>
+</div>
+</div>
+</div>
+</div>
+
+<!--To register-->
+<div class="homepage-container">
+    <div class="register-container">
+        <div class="image-container">
+            <img src="images/digitalJ.jpg" alt="reg-dig">
+        </div>
+   <div class="text-container">
+       <p class="begin-textJ">Begin your digital journey today</p>
+       <div class="button-container">
+           <a tabindex="0" class="1tr bx--btn" href="#">Register Now</a>
+           <p class="signin-text side-margin-left">or <a href="#">Sign In</a></p>
+       </div>
+   </div> </div>
+
+</div>
+<!--Discover container-->
+<div class="bx--grid homepage-discover-container" dir="ltr">
+    <div class="discover-images-container">
+        <div><p class="discover-title">Discover more courses from IBM</p></div>
+    </div>
+    <div class="">
+        <div class="bx--grid">
+            <div class="discover-images bx--row">
+       <!--1--> 
+               <div class="discover-box bx--col bx--col-lg-4 bx--col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="images/IBMSKILLSgateway.png">
+                    </a>
+                </div>
+<!--1-->
+                <div class="discover-box bx--col bx--col-lg-4 bx--col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="images/IbmSecurity.png">
+                    </a>
+                </div>
+<!--1-->
+                <div class="discover-box bx--col bx--col-lg-4 bx--col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="images/CClass.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!--share this page-->
-<section class="share">
-    <p>share this page</p>
+<div class="pause">
+<footer class style>
+ <div class="discover-social-container bx--grid bx--grid--full-width">
+<p><span>Share this page</span> 
     <a href="https://facebook.com">
       <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook">
     </a>
@@ -320,25 +427,45 @@
       <img src="https://i.ibb.co/b30HMhR/social-linkedin.png" alt="Linkedin">
     </a>
     <a href="https://gmail.com">
-        <img src="https://i.ibb.co/b30HMhR/social-gmail.png" alt="G-mail">
-      </a>
-  </section>
-<!--footer-->
-
-    <footer class="footer">
-        <div class="footer-inner">
-<ul>
-    <li><a href="#">Contact IBM</a></li>
-    <li><a href="#">Privacy</a></li>
-    <li><a href="#">Terms of Use</a></li>
-    <li><a href="#">Accessibility</a></li>
-    <li><a href="#">Cookie preferences</a></li>
-</ul>
+        <img src="images/gmail_.png" alt="G-mail">
+      </a> 
+    </p>
+    </div>
+ 
 </div>
+
+<div class="footer-bottom-container" id="footer-bottom-container-id">
+    <div class="ibm-logo"><a href="//www.ibm.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 32" width="81" height="32"><g fill-rule="evenodd"><path d="M0 32h15.689v-2.038H0zM0 27.721h15.689v-2.038H0zM4.483 23.442h6.724v-2.037H4.483zM4.483 19.164h6.724v-2.038H4.483zM4.483 14.885h6.724v-2.037H4.483zM4.482 10.606h6.724V8.568H4.482zM0 6.327h15.689V4.29H0zM0 2.049h15.689V.011H0zM17.93 29.963V32h16.504a8.521 8.521 0 0 0 5.54-2.037H17.93zM17.93 25.683v2.038h23.914a8.535 8.535 0 0 0 .85-2.038H17.93zM22.412 23.442h6.724v-2.037h-6.724zM40.124 17.126H22.412v2.038H41.77a8.62 8.62 0 0 0-1.645-2.038M22.413 12.848v2.036h17.786a8.612 8.612 0 0 0 1.644-2.037h-19.43zM42.693 6.327a8.447 8.447 0 0 0-.85-2.037H17.93v2.037h24.763zM39.974 2.049a8.521 8.521 0 0 0-5.54-2.037H17.93v2.037h22.044zM22.412 10.606h6.724V8.568h-6.724zM35.453 10.606h7.29a8.603 8.603 0 0 0 .248-2.038h-7.538v2.038zM35.453 21.405v2.037h7.538c0-.703-.09-1.384-.248-2.037h-7.29zM57.457 0H44.825v2.038h13.34zM44.826 32h11.21v-2.038h-11.21zM44.826 27.72h11.21v-2.038h-11.21zM49.309 23.439h6.727v-2.038h-6.727zM49.309 19.159h6.727v-2.038h-6.727zM69.488 32h11.21v-2.038h-11.21zM69.488 27.72h11.21v-2.038h-11.21zM69.488 23.439h6.726v-2.038h-6.726zM69.487 19.159h6.726v-2.038h-6.726zM69.488 14.879h6.726V12.84H63.606l-.707 2.038h5.903l.686-1.94zM61.916 12.84H49.31v2.039h6.726v-1.94l.686 1.94h5.903zM76.213 8.56H65.091l-.707 2.038h11.83zM68.06 0l-.706 2.038h13.344V0zM62.757 32l.72-2.038h-1.432zM61.254 27.72h3.015l.72-2.038h-4.455zM59.743 23.44h6.037l.72-2.039h-7.476zM58.232 19.159h9.06l.719-2.038h-10.5zM49.309 10.598h11.83l-.707-2.038H49.309zM65.868 6.318h14.83V4.28H66.576zM58.947 4.28H44.826v2.038h14.828z"></path></g></svg></a></div>
+</div>
+
+<div class="bx--grid--full-width footer-links-container">
+    <div class="bx--row footer-links-sub-container">
+            <div class="footer-element">
+                <span class="footer-link">Contact IBM</span>
+            </div>
+            <div class="footer-element">
+                <span class="footer-link">Privacy</span>
+            </div>
+            <div class="footer-element">
+                <span class="footer-link">Terms of Use</span>
+            </div>
+            <div class="footer-element">
+                <span class="footer-link">Accessibility</span>
+            </div>
+            <div class="footer-element">
+                <span class="footer-link">Cookie preferences</span>
+            </div>
+    </div>
+</div>
+<div class="chatbot">
+    <div class="open-chatbot">
+        <img class="openPopup" src="https://dw1.s81c.com/caas-storage/digitalcatalyst/digital-catalyst-config/dna-africa-production/_images/Chat_Window_Icon.png">
+    </div>
+    </div>
 </footer>
 
 
-<script src="easy-carousel-es5.min.js"></script>
+<!--script src="easy-carousel-es5.min.js"></script>
 <div id="carousel" 
      data-ez-view-number="5" 
      data-ez-autoscroll="on" 
@@ -373,6 +500,34 @@ carousel.makeCarousel();
         dots:true,
       });
     });
-  </script>
+  </script>-->
+  
+  <!--script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Slider main container 
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <!--div class="swiper-wrapper"-->
+        <!-- Slides 
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <!--div class="swiper-pagination"></div>-->
+
+    <!-- If we need navigation buttons -->
+    <!--div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>-->
+
+    <!-- If we need scrollbar -->
+    <!--div class="swiper-scrollbar"></div>
+</div>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100
+});</script>-->
                     </body>
 </html>
